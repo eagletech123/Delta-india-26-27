@@ -1,0 +1,6 @@
+{
+  "name": "Delta Exchange Algo Bot",
+  "description": "Visual drag-and-drop node strategy builder, backtester, and live-simulation trading bot for Delta Exchange",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

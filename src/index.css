@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-theme-bg: var(--theme-bg);
+  --color-theme-card: var(--theme-card);
+  --color-theme-text: var(--theme-text);
+  --color-theme-border: var(--theme-border);
+  --color-glass-border: var(--theme-border);
+}
+
+/* Explicit color overrides to bind theme-border classes to the dynamic runtime variables */
+.border-theme-border,
+.border-glass-border {
+  border-color: var(--theme-border) !important;
+}
+
+.divide-theme-border > * + *,
+.divide-glass-border > * + * {
+  border-color: var(--theme-border) !important;
+}
+
+
